@@ -2,11 +2,11 @@
 
 ## Description
 
-This repository contains a solution to a test task involving 13-digit numbers in the base-13 system.
+This repository contains a solution to a test task involving 13-digit numbers in the base-13 numeral system.
 
 ### Task
 
-Consider 13-digit numbers in the base-13 system (digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C) with leading zeros.
+In this task, we will consider 13-digit numbers in the base-13 numeral system (digits: 0,1,2,3,4,5,6,7,8,9,A,B,C) with leading zeros. 
 
 **Examples**:
 - ABA98859978C0
@@ -16,7 +16,7 @@ Consider 13-digit numbers in the base-13 system (digits: 0, 1, 2, 3, 4, 5, 6, 7,
 A number is termed _beautiful_ if the sum of its first six digits is equal to the sum of its last six digits.
 
 **Objective**:
-Develop a program that calculates and prints the number of beautiful 13-digit numbers in the base-13 system.
+Write a program in C/C++ that prints to the standard output the count of 13-digit beautiful numbers in the base-13 system.
 
 ## Solution
 

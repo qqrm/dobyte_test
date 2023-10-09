@@ -22,7 +22,7 @@ void computePossibleSums() {
     }
 
     // For each subsequent digit
-    for ([[maybe_unused]] auto digit : ranges::iota_view(2, MAX_DIGIT + 1)) {
+    for ([[maybe_unused]] auto digit : ranges::iota_view(1, MAX_DIGIT + 1)) {
         ranges::fill(next_sum_counts, 0);
 
         std::for_each(std::execution::par, ranges::iota_view(0, MAX_SUM + 1).begin(), 
@@ -45,7 +45,7 @@ int main() {
 
     long long count = 0;
     for (auto sum : ranges::iota_view(0, MAX_SUM + 1)) {
-        count += (long long) sum_counts[sum] * sum_counts[sum];
+        count += (long long) sum_counts[sum] * sum_counts[sum] * BASE;  // Multiply by BASE to account for the middle digit
     }
 
     cout << count << endl;
